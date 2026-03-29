@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/darkmode.css" />
+    <link rel="icon" type="image/x-icon" href="../imgs/jsmlogo.png" />
+    <title id="contacttitle">Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../imgs/jsmlogo.png" alt="" width="15%" height="15%" />
+        </div>
+
+        <ul class="menu">
+          <li><a href="../index.html" id="home">Inicio</a></li>
+          <li><a href="aboutme.html" id="aboutme">Acerca de mi</a></li>
+          <li><a href="projects.html" id="projects">Proyectos</a></li>
+          <li><a href="certifications.html" id="certifications">Certificados</a></li>
+          <li><a href="contact.html" id="contact">Contacto</a></li>
+          <li class="theme-switcher">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="../imgs/dark-lightmode.png" alt="Tema" />
+            </button>
+            <div class="theme-menu" role="menu">
+              <button id="light" type="button" onclick="setLightMode()">
+                Modo claro☀️
+              </button>
+              <button id="dark" type="button" onclick="setDarkMode()">
+                Modo oscuro🌙
+              </button>
+            </div>
+          </li>
+          <li class="theme-switcher">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="../imgs/language.png" alt="Tema" />
+            </button>
+            <div class="theme-menu" role="menu">
+              <button class="spanishbutton" type="button" onclick="changeLanguage('es')">
+                Español
+              </button>
+              <button class="englishbutton" type="button" onclick="changeLanguage('en')">
+                English
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero">
+      <div class="editor" title="Puedes omitir la animación dando click">
+        <div class="p1">
+          <h1 class="contactq">¿Quieres contactarte conmigo? Por estos medios puedes:</h1>
+          <p class="email">Correo📧: juansemartinezm99@gmail.com</p>
+          <p>
+            LinkedIn💼: <br>
+            <a href="https://www.linkedin.com/in/juan-sebastian-martinez-medina-9116722b3"
+              >Juan Sebastian Martinez Medina</a
+            >
+          </p>
+          <p>GitHub🐱: 
+            <a href="https://github.com/sebastianm7">@sebastianm7</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="../js/translations.js"></script>
+  <script src="../js/darkmode.js"></script>
+  <script src="../js/contact.js"></script>
+</html>

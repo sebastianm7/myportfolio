@@ -1,0 +1,88 @@
+html {
+  height: 35rem;
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+  font-family: monospace;
+  height: 100%;
+}
+
+
+.hero {
+  height: 100%;
+}
+
+/* modo claro */
+.light-mode {
+  background-color: white;
+  color: #0d1117;
+}
+
+/* modo oscuro */
+.dark-mode {
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+.theme-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  bottom: 0.5rem;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle img {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: block;
+}
+
+.theme-menu {
+  position: absolute;
+  right: 0;
+  top: 120%;
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: #0d1117;
+  color: #ffffff;
+  border: 1px solid #58a6ff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  min-width: 7.2rem;
+  z-index: 20;  
+}
+
+.light-mode .theme-menu {
+  background: #ffffff;
+  color: #0d1117;
+  border-color: #0d1117;
+}
+
+.theme-switcher.open .theme-menu {
+  display: flex;
+}
+
+.theme-menu button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.theme-menu button:hover {
+  background: rgba(88, 166, 255, 0.15);
+}

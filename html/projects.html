@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/darkmode.css" />
+    <link rel="icon" type="image/x-icon" href="../imgs/jsmlogo.png" />
+    <title id="projectstitle">Proyectos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../imgs/jsmlogo.png" alt="" width="15%" height="15%" />
+        </div>
+
+        <ul class="menu">
+          <li><a href="../index.html" id="home">Inicio</a></li>
+          <li><a href="aboutme.html" id="aboutme">Acerca de mi</a></li>
+          <li><a href="projects.html" id="projects">Proyectos</a></li>
+          <li><a href="certifications.html" id="certifications">Certificados</a></li>
+          <li><a href="contact.html" id="contact">Contacto</a></li>
+          <li class="theme-switcher">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="../imgs/dark-lightmode.png" alt="Tema" />
+            </button>
+            <div class="theme-menu" role="menu">
+              <button id="light" type="button" onclick="setLightMode()">
+                Modo claro☀️
+              </button>
+              <button id="dark" type="button" onclick="setDarkMode()">
+                Modo oscuro🌙
+              </button>
+            </div>
+          </li>
+          <li class="theme-switcher">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="../imgs/language.png" alt="Tema" />
+            </button>
+            <div class="theme-menu" role="menu">
+              <button class="spanishbutton" type="button" onclick="changeLanguage('es')">
+                Español
+              </button>
+              <button class="englishbutton" type="button" onclick="changeLanguage('en')">
+                English
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero">
+      <h1 class="title">Algunos de los proyectos en los que he participado:</h1>
+      <div class="editor" title="Puedes omitir la animación dando click">
+        <div class="p1">
+          <h1>Zismo🚴🏻</h1>
+          <p class="d1" id="platzi">
+            Dispositivo hecho usando Arduino y diferentes sensores. Este
+            dispositivo va en una bicicleta y si detecta un algún accidente que
+            le ocurra al usuario, este va a mandar una alerta a una app
+            desarrollada para smartphone.
+            <a href="https://github.com/GuillermoGU24/Zismo"
+              >Repo link.</a
+            >
+          </p>
+        </div>
+        <div class="p2">
+          <h1>ProcenterApp🚘</h1>
+          <p class="d2">
+            Software web hecho para una empresa de venta de automóviles. El
+            usuario que ingrese podra acceder a diferentes opciones según su rol
+            (Admin, Empleado o CLiente).
+            <a href="https://github.com/joferrer/ProcenterApp"
+              >Repo link.</a
+            >
+          </p>
+        </div>
+        <div class="p3">
+          <h1>PlantProtector💧🌱</h1>
+          <p class="d3">
+            Dispositivo hecho usando Arduino junto con diferentes sensores y una
+            pequeña bomba de agua. Este tiene la finalidad de detectar el nivel
+            de humedad de una planta y regarla automáticamente.
+            <a href="https://github.com/sebastianm7/plantprotector"
+              >Repo link.</a
+            >
+          </p>
+        </div>
+        <div class="p4">
+          <h1>Celeus Group Platform Testing👨🏻‍💻</h1>
+          <p class="d4">
+            Realización de pruebas de calidad del software usado por la empresa
+            Celeus Group para la gestión de empleados, clientes y productos.
+            Estas tuvieron la finalidad de encontrar bugs y errores en el código
+            del software para realizar su respectiva correción. No puedo
+            compartir los resultados del testing debido a un tema de
+            confidecialidad.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="../js/translations.js"></script>
+  <script src="../js/darkmode.js"></script>
+  <script src="../js/projects.js"></script>
+</html>
